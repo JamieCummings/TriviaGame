@@ -12,6 +12,7 @@
 		07A185C2216BC7250015986E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07A185C0216BC7250015986E /* Main.storyboard */; };
 		07A185C4216BC7270015986E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A185C3216BC7270015986E /* Assets.xcassets */; };
 		07A185C7216BC7270015986E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07A185C5216BC7270015986E /* LaunchScreen.storyboard */; };
+		07A185CF216CEA130015986E /* TriviaQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A185CE216CEA130015986E /* TriviaQuestions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		07A185C3216BC7270015986E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07A185C6216BC7270015986E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07A185C8216BC7270015986E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07A185CE216CEA130015986E /* TriviaQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaQuestions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				07A185C3216BC7270015986E /* Assets.xcassets */,
 				07A185C5216BC7270015986E /* LaunchScreen.storyboard */,
 				07A185C8216BC7270015986E /* Info.plist */,
+				07A185CE216CEA130015986E /* TriviaQuestions.swift */,
 			);
 			path = "Trivia Game";
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07A185CF216CEA130015986E /* TriviaQuestions.swift in Sources */,
 				07A185BF216BC7250015986E /* ViewController.swift in Sources */,
 				07A185BD216BC7250015986E /* AppDelegate.swift in Sources */,
 			);
