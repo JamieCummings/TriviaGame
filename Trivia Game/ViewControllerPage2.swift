@@ -95,7 +95,7 @@ class ViewControllerPage2: UIViewController {
         }
         // show an alert when the user gets the question wrong
         func showIncorrectAnswerAlert(){
-            let incorrectAlert = UIAlertController(title: "Incorrect", message: "\(currentQuestion.correctAnswer) was the incorrect answer", preferredStyle: .actionSheet)
+            let incorrectAlert = UIAlertController(title: "Incorrect", message: "\(currentQuestion.correctAnswer) was the correct answer", preferredStyle: .actionSheet)
             // UIAlertAction
             let closeAction = UIAlertAction(title:"close", style: .default) { _ in
                 self.questionsPlaceholder.append(self.questions.remove(at: self.randomIndex))
