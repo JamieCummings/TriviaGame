@@ -74,52 +74,59 @@ class ViewControllerPage2: UIViewController {
         // present the alert controller
         self.present(correctAlert,animated: true, completion: nil)
     }
+    
     func showRestGameAlert(){
-        let resetGameAlert = UIAlertController (title: "Game Over", message: "Total score \(score)", preferredStyle: .actionSheet)
+        // func to show an alert when the game is over and to show final score. the game will reset when the alert is dismissed.
+        let resetGameAlert = UIAlertController (title: "Game Over", message: "Total score \(score) out of \(questionsPlaceholder.count)", preferredStyle: .actionSheet)
         let closeAction = UIAlertAction(title:"close", style: .default)
         { _ in
             self.resetGame()}
         
-            resetGameAlert.addAction(closeAction)
-            self.present(resetGameAlert,animated: true, completion: nil)
+        resetGameAlert.addAction(closeAction)
+        self.present(resetGameAlert,animated: true, completion: nil)
+    }
+    
+    func resetGame(){
+        // this will reset the score, repopulate the questions array with the questions in the place holder, get a new question
+        score = 0
+        if !questions.isEmpty {
+            questionsPlaceholder.append(contentsOf: questions)
         }
-        func resetGame(){
-            // this will reset the score, repopulate the questions array with the questions in the place holder, get a new question
-            score = 0
-            if !questions.isEmpty {
-                questionsPlaceholder.append(contentsOf: questions)
-            }
-            questions = questionsPlaceholder
-            questionsPlaceholder.removeAll()
-            getNewQuestions()
+        questions = questionsPlaceholder
+        questionsPlaceholder.removeAll()
+        getNewQuestions()
+    }
+    // show an alert when the user gets the question wrong
+    func showIncorrectAnswerAlert(){
+        let incorrectAlert = UIAlertController(title: "Incorrect", message: "\(currentQuestion.correctAnswer) was the correct answer", preferredStyle: .actionSheet)
+        // UIAlertAction
+        let closeAction = UIAlertAction(title:"close", style: .default) { _ in
+            self.questionsPlaceholder.append(self.questions.remove(at: self.randomIndex))
+            self.getNewQuestions()
         }
-        // show an alert when the user gets the question wrong
-        func showIncorrectAnswerAlert(){
-            let incorrectAlert = UIAlertController(title: "Incorrect", message: "\(currentQuestion.correctAnswer) was the correct answer", preferredStyle: .actionSheet)
-            // UIAlertAction
-            let closeAction = UIAlertAction(title:"close", style: .default) { _ in
-                self.questionsPlaceholder.append(self.questions.remove(at: self.randomIndex))
-                self.getNewQuestions()
-            }
-            // Add the action to the alert controller
-            incorrectAlert.addAction(closeAction)
-            // present the alert controller
-            self.present(incorrectAlert,animated: true, completion: nil)
+        // Add the action to the alert controller
+        incorrectAlert.addAction(closeAction)
+        // present the alert controller
+        self.present(incorrectAlert,animated: true, completion: nil)
+    }
+    
+    
+    
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        if sender.tag == currentQuestion.correctAnswerIndex {
+            // they got the question right, so we need to let them know
+            showCorrectAnswerAlert()
+            score += 1
+        } else {
+            // they got the question wrong, so we need to let them know
+            showIncorrectAnswerAlert()
+            
         }
-        
-        
-        
-        @IBAction func buttonTapped(_ sender: UIButton) {
-            if sender.tag == currentQuestion.correctAnswerIndex {
-                // they got the question right, so we need to let them know
-                showCorrectAnswerAlert()
-                score += 1
-            } else {
-                // they got the question wrong, so we need to let them know
-                showIncorrectAnswerAlert()
-                
-            }
-        }
-        
+    }
+    
+    @IBAction func resetButtonTapped(_ sender: Any) {
+        resetGame() 
+    }
+
 }
 

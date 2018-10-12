@@ -19,6 +19,7 @@
 		07A185F5216E38810015986E /* movieQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A185F4216E38810015986E /* movieQuotes.swift */; };
 		07A185F7216E3CDD0015986E /* sports.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A185F6216E3CDD0015986E /* sports.swift */; };
 		07A185F9216E40240015986E /* Music .swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A185F8216E40240015986E /* Music .swift */; };
+		07A185FB216FA9AE0015986E /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A185FA216FA9AE0015986E /* ViewController3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		07A185F4216E38810015986E /* movieQuotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movieQuotes.swift; sourceTree = "<group>"; };
 		07A185F6216E3CDD0015986E /* sports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sports.swift; sourceTree = "<group>"; };
 		07A185F8216E40240015986E /* Music .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Music .swift"; sourceTree = "<group>"; };
+		07A185FA216FA9AE0015986E /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				07A185F4216E38810015986E /* movieQuotes.swift */,
 				07A185F6216E3CDD0015986E /* sports.swift */,
 				07A185F8216E40240015986E /* Music .swift */,
+				07A185FA216FA9AE0015986E /* ViewController3.swift */,
 			);
 			path = "Trivia Game";
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 			files = (
 				07A185F9216E40240015986E /* Music .swift in Sources */,
 				07A185F3216D3AF50015986E /* science .swift in Sources */,
+				07A185FB216FA9AE0015986E /* ViewController3.swift in Sources */,
 				07A185F7216E3CDD0015986E /* sports.swift in Sources */,
 				07A185F5216E38810015986E /* movieQuotes.swift in Sources */,
 				07A185CF216CEA130015986E /* TriviaQuestions.swift in Sources */,

@@ -62,6 +62,8 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBAction func allCatButtonPush(_ sender: Any) {
         
     }
-    
+    @IBAction func unwindToQuizScreen(segue: UIStoryboardSegue){
+        
+    }
 }
 
