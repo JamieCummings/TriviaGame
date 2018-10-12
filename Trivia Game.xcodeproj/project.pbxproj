@@ -12,6 +12,14 @@
 		07A185C2216BC7250015986E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07A185C0216BC7250015986E /* Main.storyboard */; };
 		07A185C4216BC7270015986E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A185C3216BC7270015986E /* Assets.xcassets */; };
 		07A185C7216BC7270015986E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07A185C5216BC7270015986E /* LaunchScreen.storyboard */; };
+		07A185CF216CEA130015986E /* TriviaQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A185CE216CEA130015986E /* TriviaQuestions.swift */; };
+		07A185EF216D215B0015986E /* ViewControllerPage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A185EE216D215B0015986E /* ViewControllerPage2.swift */; };
+		07A185F1216D2E470015986E /* question-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A185F0216D2E470015986E /* question-512.png */; };
+		07A185F3216D3AF50015986E /* science .swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A185F2216D3AF50015986E /* science .swift */; };
+		07A185F5216E38810015986E /* movieQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A185F4216E38810015986E /* movieQuotes.swift */; };
+		07A185F7216E3CDD0015986E /* sports.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A185F6216E3CDD0015986E /* sports.swift */; };
+		07A185F9216E40240015986E /* Music .swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A185F8216E40240015986E /* Music .swift */; };
+		07A185FB216FA9AE0015986E /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A185FA216FA9AE0015986E /* ViewController3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		07A185C3216BC7270015986E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07A185C6216BC7270015986E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07A185C8216BC7270015986E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07A185CE216CEA130015986E /* TriviaQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaQuestions.swift; sourceTree = "<group>"; };
+		07A185EE216D215B0015986E /* ViewControllerPage2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPage2.swift; sourceTree = "<group>"; };
+		07A185F0216D2E470015986E /* question-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "question-512.png"; sourceTree = "<group>"; };
+		07A185F2216D3AF50015986E /* science .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "science .swift"; sourceTree = "<group>"; };
+		07A185F4216E38810015986E /* movieQuotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movieQuotes.swift; sourceTree = "<group>"; };
+		07A185F6216E3CDD0015986E /* sports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sports.swift; sourceTree = "<group>"; };
+		07A185F8216E40240015986E /* Music .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Music .swift"; sourceTree = "<group>"; };
+		07A185FA216FA9AE0015986E /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +74,16 @@
 				07A185BE216BC7250015986E /* ViewController.swift */,
 				07A185C0216BC7250015986E /* Main.storyboard */,
 				07A185C3216BC7270015986E /* Assets.xcassets */,
+				07A185F0216D2E470015986E /* question-512.png */,
 				07A185C5216BC7270015986E /* LaunchScreen.storyboard */,
 				07A185C8216BC7270015986E /* Info.plist */,
+				07A185CE216CEA130015986E /* TriviaQuestions.swift */,
+				07A185EE216D215B0015986E /* ViewControllerPage2.swift */,
+				07A185F2216D3AF50015986E /* science .swift */,
+				07A185F4216E38810015986E /* movieQuotes.swift */,
+				07A185F6216E3CDD0015986E /* sports.swift */,
+				07A185F8216E40240015986E /* Music .swift */,
+				07A185FA216FA9AE0015986E /* ViewController3.swift */,
 			);
 			path = "Trivia Game";
 			sourceTree = "<group>";
@@ -122,6 +146,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07A185F1216D2E470015986E /* question-512.png in Resources */,
 				07A185C7216BC7270015986E /* LaunchScreen.storyboard in Resources */,
 				07A185C4216BC7270015986E /* Assets.xcassets in Resources */,
 				07A185C2216BC7250015986E /* Main.storyboard in Resources */,
@@ -135,7 +160,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07A185F9216E40240015986E /* Music .swift in Sources */,
+				07A185F3216D3AF50015986E /* science .swift in Sources */,
+				07A185FB216FA9AE0015986E /* ViewController3.swift in Sources */,
+				07A185F7216E3CDD0015986E /* sports.swift in Sources */,
+				07A185F5216E38810015986E /* movieQuotes.swift in Sources */,
+				07A185CF216CEA130015986E /* TriviaQuestions.swift in Sources */,
 				07A185BF216BC7250015986E /* ViewController.swift in Sources */,
+				07A185EF216D215B0015986E /* ViewControllerPage2.swift in Sources */,
 				07A185BD216BC7250015986E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
